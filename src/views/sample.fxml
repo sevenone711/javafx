@@ -22,10 +22,10 @@
               <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="About">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
+          <Menu mnemonicParsing="false" text="Info">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
+               </items>
           </Menu>
         </menus>
       </MenuBar>
@@ -53,10 +53,10 @@
       </HBox>
    </bottom>
    <left>
-      <TableView prefHeight="446.0" prefWidth="163.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tableView" prefHeight="446.0" prefWidth="163.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="83.0" text="LastName" />
-          <TableColumn prefWidth="79.0" text="FirstName" />
+          <TableColumn fx:id="lastName" prefWidth="83.0" text="LastName" />
+          <TableColumn fx:id="firstName" prefWidth="79.0" text="FirstName" />
         </columns>
       </TableView>
    </left>
